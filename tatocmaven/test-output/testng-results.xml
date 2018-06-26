@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2223" started-at="2018-06-26T13:52:38Z" finished-at="2018-06-26T13:52:40Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2223" started-at="2018-06-26T13:52:38Z" finished-at="2018-06-26T13:52:40Z">
+      <class name="com.qainfotech.tatocmaven.AppTest">
+        <test-method status="PASS" signature="testChooseBasicCourse()[pri:0, instance:com.qainfotech.tatocmaven.AppTest@7d900ecf]" name="testChooseBasicCourse" duration-ms="1920" started-at="2018-06-26T13:52:38Z" finished-at="2018-06-26T13:52:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChooseBasicCourse -->
+        <test-method status="PASS" signature="testgridgate()[pri:0, instance:com.qainfotech.tatocmaven.AppTest@7d900ecf]" name="testgridgate" duration-ms="257" started-at="2018-06-26T13:52:40Z" depends-on-methods="com.qainfotech.tatocmaven.AppTest.testChooseBasicCourse" finished-at="2018-06-26T13:52:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgridgate -->
+      </class> <!-- com.qainfotech.tatocmaven.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
