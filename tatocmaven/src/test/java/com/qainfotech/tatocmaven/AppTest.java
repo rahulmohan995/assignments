@@ -19,26 +19,26 @@ public class AppTest {
 		Assert.assertTrue(test.CurrentLink().contains("dungeon"));
 	}
 	
-//	@Test(dependsOnMethod="")
-//	public void testframedungeon() {
-//		test.framedungeon();
-//		Assert.assertTrue(test.CurrentLink().contains("basic/drag"));
-//	}
-//	
-//	@Test(priority=3)
-//	public void testbasicdrag() {
-//		test.basicdrag();
-//		Assert.assertTrue(test.CurrentLink().contains("basic/windows"));
-//	}
-//	
-//	@Test(priority=4)
-//	public void testwindows() {
-//		test.windows();
-//		Assert.assertTrue(test.CurrentLink().contains("basic/cookie"));
-//	}
-//	@Test(priority=5)
-//	public void testcookie() {
-//		test.cookie();
-//		Assert.assertTrue(test.CurrentLink().contains("tatoc/end"));
-//	}
+	@Test(dependsOnMethods="testgridgate")
+	public void testframedungeon() {
+		test.framedungeon();
+		Assert.assertTrue(test.CurrentLink().contains("basic/drag"));
+	}
+	
+	@Test(dependsOnMethods="testframedungeon")
+	public void testbasicdrag() {
+		test.basicdrag();
+		Assert.assertTrue(test.CurrentLink().contains("basic/windows"));
+	}
+	
+	@Test(dependsOnMethods="testbasicdrag")
+	public void testwindows() {
+		test.windows();
+		Assert.assertTrue(test.CurrentLink().contains("basic/cookie"));
+	}
+	@Test(dependsOnMethods="testwindows")
+	public void testcookie() {
+		test.cookie();
+		Assert.assertTrue(test.CurrentLink().contains("tatoc/end"));
+	}
 }
